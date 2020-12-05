@@ -1,4 +1,4 @@
-// Preloader
+// Preloader dengan Jquery
 $(window).on("load",function(){
     $('.preloader-container').fadeOut();
 })

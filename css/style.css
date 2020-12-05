@@ -199,6 +199,9 @@ img{
 .nav-link:hover{
     color: var(--text-color);
 }
+a.nav-link svg{
+    margin-right: var(--mb-2);
+}
 .nav-toggle{
     color: var(--first-color-dark);
     font-size: 1.3rem;
@@ -210,4 +213,76 @@ img{
 /* ########## ACTIVE ########## */
 .active {
     color: var(--text-color);
+}
+/* ################## HOME ################### */
+.home-container{
+    height: calc(100vh - var(--header-height));
+    align-items: center;
+}
+.home-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    text-align: center;
+}
+.home-img{
+    padding-top: 1.3rem;
+    padding-left: .8rem;
+    width: 160px;
+    height: 160px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    margin-bottom: var(--mb-2);
+}
+.home-img img{
+    width: 155px;
+}
+.home-title{
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+}
+.home-profession{
+    font-size: var(--small-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-5);
+}
+.home-social{
+    margin-bottom: 5rem;
+}
+.home-social-link{
+    display: inline-flex;
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: .40rem;
+    margin: 0 var(--mb-1);
+}
+.home-social-link:hover{
+    background-color: var(--first-color-dark);
+}
+.home-button{
+    width: 100%;
+}
+/* Button */
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    padding: 1rem 2rem;
+    font-weight: var(--font-semi-bold);
+    border-radius: .5rem;
+    transition: .3s;
+}
+.button:hover{
+    background-color: var(--first-color-dark);
+}
+.button-light{
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
+}
+.button-light:hover{
+    color: var(--first-color-lighten);
 }
