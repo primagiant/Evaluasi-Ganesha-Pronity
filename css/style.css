@@ -7,10 +7,13 @@
     --nav-width: 324px;
 
     /* color */
-    --primary-color: #000;
-    --secondary-color: #30475e;
-    --primary-color-light: #f05454;
-    --text-color:#e8e8e8;
+    --first-color: #cc4b2c;
+    --first-color-dark: #662616;
+    --first-color-darken: #290f09;
+    --text-color: #54423d;
+    --first-color-light: #eae7e6;
+    --first-color-lighten: #fffafa;
+
 
     /* font weight */
     --font-medium: 500;
@@ -60,7 +63,7 @@ body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    background-color: var(--primary-color);
+    background-color: var(--first-color-lighten);
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -76,7 +79,6 @@ img{
     height: auto;
     display: block;
 }
-
 /* ################## Preloader ################### */
 .preloader-container{
     position: fixed;
@@ -86,6 +88,7 @@ img{
     align-items: center;
     justify-content: center;
     background-color: #000;
+    z-index: 999999;
 }
 .preloader{
     display: flex;
@@ -119,4 +122,92 @@ img{
 	0%{left:58%;}
 	50%{left:43%;}
 	100%{left:58%;}
+}
+/* ################## CLASS CSS ################### */
+.section{
+    padding: 4rem 0 2rem;
+}
+.section-title{
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+    text-align: center;
+}
+.section-subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--first-color-darken);
+    font-weight: var(--font-bold);
+    margin-bottom: .25rem;
+}
+/* ################## LAYOUT ################### */
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--first-color-lighten);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+/* ################## NAVBAR ################### */
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 90%;
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--first-color);
+    transition: .5s;
+}
+.nav-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--first-color-dark);
+    cursor: pointer;
+}
+.nav-item{
+    margin-bottom: var(--mb-4);
+}
+.nav-link{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--first-color-lighten);
+    font-weight: var(--font-bold);
+    transition: .3s;
+}
+.nav-link:hover{
+    color: var(--text-color);
+}
+.nav-toggle{
+    color: var(--first-color-dark);
+    font-size: 1.3rem;
+}
+/* ########### SHOW ########### */
+.show{
+    left: 0;
+}
+/* ########## ACTIVE ########## */
+.active {
+    color: var(--text-color);
 }
