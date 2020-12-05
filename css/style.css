@@ -12,37 +12,35 @@
     background-color: #000;
 }
 .preloader{
-	width: 400px;
-    height: 400px;
-    background-color: #000;
-    transform: translateX(-30px);
-	filter: blur(10px) contrast(20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 300px;
+    height: 300px;
+    background-color: rgb(37, 34, 34);
+    filter: blur(5px) contrast(20);
 }
 .circle-1,.circle-2{
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	position:absolute;
 	background:#fff;
 	border-radius:50%;
-	top:40%;left:30%;
-	/* transform:translate(-50%,-50%); */
 }
 .circle-1{
-	left:20%;
-	animation:osc-l 2.5s ease infinite;
+	animation:circle-left 2s ease infinite;
 }
 .circle-2{
-	left:80%;
-	animation:osc-r 2.5s ease infinite;
+	animation:circle-right 2s ease infinite;
 	background: yellow;
 }
-@keyframes osc-l{
-	0%{left:20%;}
-	50%{left:50%;}
-	100%{left:20%;}
+@keyframes circle-left{
+	0%{left:28%;}
+	50%{left:43%;}
+	100%{left:28%;}
 }
-@keyframes osc-r{
-	0%{left:80%;}
-	50%{left:50%;}
-	100%{left:80%;}
+@keyframes circle-right{
+	0%{left:58%;}
+	50%{left:43%;}
+	100%{left:58%;}
 }
