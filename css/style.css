@@ -376,3 +376,41 @@ a.nav-link svg{
 .skill-laravel{
     width: 40%;
 }
+/* ################## SERVICES ################### */
+.services-container{
+    row-gap: 2rem;
+}
+.services-content{
+    padding: 1.5rem .5rem;
+    border: 2px solid var(--first-color);
+    border-radius: .5rem;
+    text-align: center;
+}
+.services-icon{
+    font-size: 2rem;
+    padding: .5rem;
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    border-radius: 50%;
+}
+.services-title{
+    font-size: 1.25rem;
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-1);
+}
+.services-content, .services-icon, .services-description, .services-title{
+    transition: .5s;
+}
+.services-content:hover{
+    background-color: var(--first-color);
+}
+.services-content:hover .services-title{
+    color: var(--first-color-lighten);
+}
+.services-content:hover .services-description{
+    color: var(--first-color-lighten);
+}
+.services-content:hover .services-icon{
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
+}
