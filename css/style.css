@@ -50,7 +50,7 @@
         --smaller-font-size: .813rem;
     }
 }
-/* ################## BASE ################### */
+/* ################## RESET ################### */
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -85,6 +85,9 @@ img{
     max-width: 100%;
     height: auto;
     display: block;
+}
+textarea{
+    resize: none;
 }
 /* ################## Preloader ################### */
 .preloader-container{
