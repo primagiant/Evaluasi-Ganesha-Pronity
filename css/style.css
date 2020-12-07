@@ -1,6 +1,5 @@
-/* ################## GOOGLE FONT LINK ################### */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+/* ################## CSS VARIABEL ################### */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* ################## CSS VARIABEL ################### */
 :root{
     --header-height: 3rem;
@@ -67,8 +66,16 @@ body{
     color: var(--text-color);
     line-height: 1.6;
 }
+h1,h2,h3,p{
+    margin: 0;
+}
 h3{
     font-weight: var(--font-semi-bold);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 a{
     text-decoration: none;
@@ -135,6 +142,7 @@ img{
 }
 .section-subtitle{
     display: block;
+    text-align: center;
     font-size: var(--small-font-size);
     color: var(--first-color-darken);
     font-weight: var(--font-bold);
@@ -285,4 +293,45 @@ a.nav-link svg{
 }
 .button-light:hover{
     color: var(--first-color-lighten);
+}
+/* ################## ABOUT ################### */
+.about-container{
+    row-gap: 2rem;
+}
+.about-data{
+    text-align: center;
+}
+.about-description{
+    margin-bottom: var(--mb-4);
+}
+.about-img{
+    width: 150px;
+    border-radius: .5rem;
+    margin: 0 auto;
+}
+.about-information{
+    margin-bottom: var(--mb-4);
+}
+.about-information-title{
+    font-size: var(--h3-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-2);
+}
+.about-information-data{
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    margin-bottom: var(--mb-3);
+}
+.about-information-icon{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-right: var(--mb-4);
+}
+.about-information-subtitle{
+    display: block;
+    font-weight: var(--font-semi-bold);
+}
+.about-information-subtitle-small{
+    font-size: var(--small-font-size);
 }
