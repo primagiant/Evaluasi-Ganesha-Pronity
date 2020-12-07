@@ -414,3 +414,42 @@ a.nav-link svg{
     background-color: var(--first-color-lighten);
     color: var(--first-color);
 }
+/* ################## CONTACT ################### */
+.contact-container{
+    row-gap: 2rem;
+}
+.contact-input{
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    background-color:var(--first-color-light);
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-2);
+    border-radius: .5rem;
+}
+.contact::placeholder{
+    color: var(--first-color-dark);
+    font-family: var(--body-font);
+    font-weight: var(--font-medium);
+}
+.contact-button{
+    outline: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-bottom: var(--mb-5);
+}
+.contact-info{
+    margin-bottom: var(--mb-3);
+}
+.contact-subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-1);
+}
+.contact-text{
+    display: block;
+    padding-left: 1rem;
+}
