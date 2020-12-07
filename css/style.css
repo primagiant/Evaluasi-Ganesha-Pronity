@@ -456,3 +456,40 @@ a.nav-link svg{
     display: block;
     padding-left: 1rem;
 }
+/* ################## FOOTER ################### */
+.footer{
+    background-color: var(--first-color-darken);
+    color: var(--first-color-lighten);
+    text-align: center;
+}
+.footer-title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-2);
+}
+.footer-description{
+    margin-bottom: var(--mb-2);
+}
+.footer-social{
+    margin-bottom: 3rem;
+}
+.footer-link{
+    display: inline-flex;
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    font-size: 1.1rem;
+    border-radius: 50%;
+    padding: .40rem;
+    margin: 0 var(--mb-1);
+    transition: .3s;
+}
+.footer-link:hover{
+    background-color: var(--first-color-lighten);
+    color: var(--first-color);
+}
+.footer-copy{
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+}
+.footer-copy svg{
+    margin-right: var(--mb-1);
+}
