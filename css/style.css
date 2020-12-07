@@ -335,3 +335,44 @@ a.nav-link svg{
 .about-information-subtitle-small{
     font-size: var(--small-font-size);
 }
+/* ################## SKILLS ################### */
+.skills-container{
+    row-gap: 2rem;
+}
+.skills-subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--first-color-dark);
+    margin-bottom: var(--mb-2);
+}
+.skills-data{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 var(--mb-4);
+}
+.skills-name{
+    text-transform: uppercase;
+    margin-bottom: var(--mb-3);
+}
+.skills-bar{
+    position: absolute;
+    top: 2rem;
+    height: .25rem;
+    background-color: var(--first-color);
+    border-radius: .125rem;
+}
+.skill-html{
+    width: 80%;
+}
+.skill-js{
+    width: 50%;
+}
+.skill-php{
+    width: 80%;
+}
+.skill-codeigniter{
+    width: 50%;
+}
+.skill-laravel{
+    width: 40%;
+}
