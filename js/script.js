@@ -1,3 +1,6 @@
+// Initialize AOS CDN
+AOS.init();
+
 // Preloader dengan Jquery
 $(window).on("load",function(){
     $('.preloader-container').fadeOut();
