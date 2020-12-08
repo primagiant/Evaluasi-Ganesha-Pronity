@@ -222,7 +222,7 @@ a.nav-link svg{
     left: 0;
 }
 /* ========== ACTIVE ==========*/
-.active {
+.nav-active {
     color: var(--text-color);
 }
 /* ========================== HOME ==========================*/
@@ -450,6 +450,7 @@ a.nav-link svg{
 .project-list img{
     width: 200px;
     margin-bottom: var(--mb-2);
+    border-radius: 10px;
 }
 /* ========================== CONTACT ==========================*/
 .contact-container{

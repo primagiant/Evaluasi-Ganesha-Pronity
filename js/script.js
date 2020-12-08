@@ -33,3 +33,16 @@ $('.nav-link').on('click', function(e){
 
     e.preventDefault()
 })
+
+// FILTER SCRIPT UNTUK PROJECT SECTION
+$(document).ready(function(){
+    $(".project-filter-list").on('click', function(){
+        const nilai = $(this).attr('data-filter');
+        if(nilai == 'all') {
+            $(".project-list").show('1000');
+        } else {
+            $(".project-list").not("."+ nilai).hide('1000');
+            $(".project-list").filter("."+ nilai).show('1000');
+        }
+    })
+})
