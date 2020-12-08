@@ -420,7 +420,37 @@ a.nav-link svg{
     color: var(--first-color);
 }
 /* ========================== PROJECT ==========================*/
-
+.project-container{
+    row-gap: 2rem;
+}
+.project-filter-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
+.project-filter-list{
+    background-color: var(--first-color);
+    color: var(--first-color-lighten);
+    border-radius: .75rem;
+    border: none;
+    padding: .25rem;
+    cursor: pointer;
+}
+.project-filter-list:active,
+.project-filter-list:hover{
+    background-color: var(--first-color-dark);
+    color: var(--first-color-light);
+}
+.project-lists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.project-list img{
+    width: 200px;
+    margin-bottom: var(--mb-2);
+}
 /* ========================== CONTACT ==========================*/
 .contact-container{
     row-gap: 2rem;
@@ -526,6 +556,10 @@ a.nav-link svg{
     }
     .about-information{
         padding-left: 4rem;
+    }
+    /* === PROJECT ===*/
+    .project-list img{
+        width: 300px;
     }
     /* === CONTACT ===*/
     .contact-form{
