@@ -1,6 +1,6 @@
-/* ################## CSS VARIABEL ################### */
+/* ========================== CSS VARIABEL ==========================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* ################## CSS VARIABEL ################### */
+/* ========================== CSS VARIABEL ==========================*/
 :root{
     --header-height: 3rem;
     --nav-width: 324px;
@@ -50,7 +50,7 @@
         --smaller-font-size: .813rem;
     }
 }
-/* ################## RESET ################### */
+/* ========================== RESET ==========================*/
 *,::before,::after{
     box-sizing: border-box;
 }
@@ -89,7 +89,7 @@ img{
 textarea{
     resize: none;
 }
-/* ################## Preloader ################### */
+/* ========================== Preloader ==========================*/
 .preloader-container{
     position: fixed;
     width: 100%;
@@ -133,7 +133,7 @@ textarea{
 	50%{left:43%;}
 	100%{left:58%;}
 }
-/* ################## CLASS CSS ################### */
+/* ========================== CLASS CSS ==========================*/
 .section{
     padding: 4rem 0 2rem;
 }
@@ -151,7 +151,7 @@ textarea{
     font-weight: var(--font-bold);
     margin-bottom: .25rem;
 }
-/* ################## LAYOUT ################### */
+/* ========================== LAYOUT ==========================*/
 .bd-grid{
     max-width: 1024px;
     display: grid;
@@ -170,7 +170,7 @@ textarea{
     background-color: var(--first-color-lighten);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
-/* ################## NAVBAR ################### */
+/* ========================== NAVBAR ==========================*/
 .nav{
     height: var(--header-height);
     display: flex;
@@ -217,15 +217,15 @@ a.nav-link svg{
     color: var(--first-color-dark);
     font-size: 1.3rem;
 }
-/* ########### SHOW ########### */
+/* ========== SHOW ==========*/
 .show{
     left: 0;
 }
-/* ########## ACTIVE ########## */
+/* ========== ACTIVE ==========*/
 .active {
     color: var(--text-color);
 }
-/* ################## HOME ################### */
+/* ========================== HOME ==========================*/
 .home-container{
     height: calc(100vh - var(--header-height));
     align-items: center;
@@ -297,7 +297,7 @@ a.nav-link svg{
 .button-light:hover{
     color: var(--first-color-lighten);
 }
-/* ################## ABOUT ################### */
+/* ========================== ABOUT ==========================*/
 .about-container{
     row-gap: 2rem;
 }
@@ -338,7 +338,7 @@ a.nav-link svg{
 .about-information-subtitle-small{
     font-size: var(--small-font-size);
 }
-/* ################## SKILLS ################### */
+/* ========================== SKILLS ==========================*/
 .skills-container{
     row-gap: 2rem;
 }
@@ -379,7 +379,7 @@ a.nav-link svg{
 .skill-laravel{
     width: 40%;
 }
-/* ################## SERVICES ################### */
+/* ========================== SERVICES ==========================*/
 .services-container{
     row-gap: 2rem;
 }
@@ -417,7 +417,7 @@ a.nav-link svg{
     background-color: var(--first-color-lighten);
     color: var(--first-color);
 }
-/* ################## CONTACT ################### */
+/* ========================== CONTACT ==========================*/
 .contact-container{
     row-gap: 2rem;
 }
@@ -456,7 +456,7 @@ a.nav-link svg{
     display: block;
     padding-left: 1rem;
 }
-/* ################## FOOTER ################### */
+/* ========================== FOOTER ==========================*/
 .footer{
     background-color: var(--first-color-darken);
     color: var(--first-color-lighten);

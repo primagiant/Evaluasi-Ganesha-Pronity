@@ -17,10 +17,16 @@ closeMenu.addEventListener('click', function(){
     navMenu.classList.toggle('show');
 })
 
-// REMOVE MENU
-const navLink = document.querySelectorAll('.nav-link')
+// REMOVE MENU and SCROLL ACTION
+$('.nav-link').on('click', function(e){
+    let href = $(this).attr('href');
+    let elementHref = $(href);
+    
+    navMenu.classList.remove('show')
 
-function linkAction() {
-    navMenu.classList.remove('show');
-}
-navLink.forEach(n => n.addEventListener('click', linkAction))
+    $("html,body").animate({
+        scrollTop: elementHref.offset().top - 50
+    }, 500, 'easeInOutExpo')
+
+    e.preventDefault()
+})
