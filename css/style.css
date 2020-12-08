@@ -419,6 +419,8 @@ a.nav-link svg{
     background-color: var(--first-color-lighten);
     color: var(--first-color);
 }
+/* ========================== PROJECT ==========================*/
+
 /* ========================== CONTACT ==========================*/
 .contact-container{
     row-gap: 2rem;
