@@ -25,7 +25,7 @@ $('.nav-link').on('click', function(e){
     navMenu.classList.remove('show')
 
     $("html,body").animate({
-        scrollTop: elementHref.offset().top - 50
+        scrollTop: elementHref.offset().top
     }, 500, 'easeInOutExpo')
 
     e.preventDefault()
