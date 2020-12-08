@@ -1,4 +1,4 @@
-/* ========================== CSS VARIABEL ==========================*/
+/* ========================== GOGGLE FONT ==========================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* ========================== CSS VARIABEL ==========================*/
 :root{
@@ -89,7 +89,7 @@ img{
 textarea{
     resize: none;
 }
-/* ========================== Preloader ==========================*/
+/* ========================== PRELOADER ==========================*/
 .preloader-container{
     position: fixed;
     width: 100%;
@@ -245,8 +245,10 @@ a.nav-link svg{
     background-color: var(--first-color);
     border-radius: 50%;
     margin-bottom: var(--mb-2);
+    overflow: hidden;
 }
 .home-img img{
+    transform: translate(-5%, -5%);
     width: 155px;
 }
 .home-title{
@@ -308,7 +310,7 @@ a.nav-link svg{
     margin-bottom: var(--mb-4);
 }
 .about-img{
-    width: 150px;
+    width: 250px;
     border-radius: .5rem;
     margin: 0 auto;
 }
@@ -492,4 +494,90 @@ a.nav-link svg{
 }
 .footer-copy svg{
     margin-right: var(--mb-1);
+}
+
+/* ========================== MEDIA QUERY ==========================*/
+@media screen and (min-width: 768px){
+    /* === NAVBAR ===*/
+    .nav-menu{
+        width: var(--nav-width);
+    }
+    /* === CONTAINER ===*/
+    .about-container,
+    .skills-container,
+    .services-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* === HOME ===*/
+    .home-button{
+        width: initial;
+    }
+    /* === ABOUT ===*/
+    .about-data{
+        text-align: initial;
+    }
+    .about-description{
+        margin-bottom: var(--mb-5);
+    }
+    .about-img{
+        width: 220px;
+    }
+    .about-information{
+        padding-left: 4rem;
+    }
+    /* === CONTACT ===*/
+    .contact-form{
+        display: grid;
+        column-gap: 1.5rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contact-info{
+        padding-left: 3rem;
+    }
+    /* === FOOTER ===*/
+    .footer{
+        background: none;
+    }
+    .footer-container{
+        background-color: var(--first-color-darken);
+        padding: 3rem 0;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body {
+        margin: 0;
+        padding-left: var(--nav-width);
+    }
+    .l-header{
+        width: 0;
+    }
+    .nav-toggle, .nav-logo, .nav-close{
+        display: none;
+    }
+    .nav-menu{
+        left: 0;
+    }
+    .home-container{
+        height: 100vh;
+    }
+    .section{
+        padding: 3rem;
+    }
+    .bd-grid{
+        margin: 0 auto;
+    }
+    .about-container,
+    .skills-container,
+    .services-container,
+    .contact-container{
+        margin-top: var(--mb-1);
+        padding-top: 5%;
+    }
+}
+@media screen and (min-width: 1400px){
+    .services-container{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
