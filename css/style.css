@@ -5,14 +5,13 @@
     --header-height: 3rem;
     --nav-width: 324px;
 
-    /* color */
+    /* === Color === */
     --first-color: #cc4b2c;
     --first-color-dark: #662616;
     --first-color-darken: #290f09;
     --text-color: #54423d;
     --first-color-light: #eae7e6;
     --first-color-lighten: #fffafa;
-
 
     /* font weight */
     --font-medium: 500;
@@ -189,6 +188,9 @@ textarea{
     background-color: var(--first-color);
     transition: .5s;
 }
+.nav-list{
+    width: 100%;
+}
 .nav-close{
     position: absolute;
     top: 1rem;
@@ -216,6 +218,34 @@ a.nav-link svg{
 .nav-toggle{
     color: var(--first-color-dark);
     font-size: 1.3rem;
+}
+/* === Theme ===*/
+.theme{
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;
+}
+.theme-title{
+    font-size: var(--h3-font-size);
+    color: var(--first-color-lighten);
+    margin-bottom: var(--mb-2);
+}
+.theme-title svg{
+    margin-right: var(--mb-2);
+}
+.theme-color{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-right: var(--mb-1);
+    margin-bottom: var(--mb-1);
+}
+.default{
+    background-color: rgb(185, 11, 11);
+}
+.blue{
+    background-color: rgb(35, 187, 207);
 }
 /* ========== SHOW ==========*/
 .show{
@@ -425,11 +455,13 @@ a.nav-link svg{
 }
 .project-filter-container{
     display: flex;
-    justify-content: space-evenly;
+    margin-left: 2rem;
+    /* justify-content: space-evenly; */
     margin-bottom: var(--mb-2);
 }
 .project-filter-list{
     background-color: var(--first-color);
+    margin-right: var(--mb-2);
     color: var(--first-color-lighten);
     border-radius: .75rem;
     border: none;
