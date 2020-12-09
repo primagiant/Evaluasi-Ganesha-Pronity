@@ -53,5 +53,10 @@ const themeColor = document.querySelectorAll('.theme-color');
 
 themeColor.forEach(color => color.addEventListener('click', ()=>{
     let theme = color.getAttribute('data-theme');
-    themeChanger.setAttribute('href','css/'+theme+'.css')
+    if(theme == ""){
+        themeChanger.setAttribute('href',theme)   
+    } else {
+        themeChanger.setAttribute('href','css/'+theme+'.css')
+    }
+    navMenu.classList.remove('show')
 }))
