@@ -222,8 +222,9 @@ a.nav-link svg{
 /* === Theme ===*/
 .theme{
     display: flex;
-    width: 75%;
+    width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .theme-title{
     font-size: var(--h3-font-size);
@@ -238,17 +239,22 @@ a.nav-link svg{
     height: 30px;
     cursor: pointer;
     border: 1px solid white;
-    margin-right: var(--mb-1);
     margin-bottom: var(--mb-1);
 }
 .default{
     background-color: rgb(185, 11, 11);
 }
 .blue{
-    background-color: rgb(35, 187, 207);
+    background-color: #2677c4;
+}
+.dark-blue{
+    background-color: #001f54;
 }
 .green{
-    background-color: #56c596;
+    background-color: #329c4d;
+}
+.purple{
+    background-color: #560bad;
 }
 /* ========== SHOW ==========*/
 .show{
@@ -558,7 +564,7 @@ a.nav-link svg{
 }
 .footer-copy{
     font-size: var(--smaller-font-size);
-    color: var(--text-color);
+    color: var(--first-color-lighten);
 }
 .footer-copy svg{
     margin-right: var(--mb-1);
