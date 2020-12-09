@@ -46,3 +46,12 @@ $(document).ready(function(){
         }
     })
 })
+
+// CHANGE THEME
+const themeChanger = document.querySelector('.change-theme');
+const themeColor = document.querySelectorAll('.theme-color');
+
+themeColor.forEach(color => color.addEventListener('click', ()=>{
+    let theme = color.getAttribute('data-theme');
+    themeChanger.setAttribute('href','css/'+theme+'.css')
+}))

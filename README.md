@@ -9,3 +9,4 @@ Tugas Evaluasi Komunitas Ganesha Pronity
 1. Responsive
 2. Filter Image (Menggunakan JQUERY)
 3. Animation On Scroll (Menggunakna Plugin AOS)
+4. Theme Changer
