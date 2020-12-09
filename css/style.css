@@ -247,6 +247,9 @@ a.nav-link svg{
 .blue{
     background-color: rgb(35, 187, 207);
 }
+.green{
+    background-color: #56c596;
+}
 /* ========== SHOW ==========*/
 .show{
     left: 0;

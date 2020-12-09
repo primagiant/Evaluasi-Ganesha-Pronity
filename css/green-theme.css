@@ -1,0 +1,9 @@
+:root{
+    /* Green Color */
+    --first-color: #034918;
+    --first-color-dark: #329c4d;
+    --first-color-darken: #cff402;
+    --text-color: rgb(176, 240, 180);
+    --first-color-light: #7be945;
+    --first-color-lighten: #56c595;
+}
